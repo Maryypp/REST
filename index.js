@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/Notas", (req, res) => {
+    console.log("get")
     const data = readData();
     res.json(data.Notas);
 });
